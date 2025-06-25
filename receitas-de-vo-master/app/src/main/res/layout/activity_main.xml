@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF8E1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receitas da Vó"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#6D4C41"
+        android:layout_gravity="center"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título da Receita"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edtIngredientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredientes"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edtModoPreparo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modo de Preparo"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Receita"
+        android:backgroundTint="#F06292"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnLimparTudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deletar Todas"
+        android:backgroundTint="#EF9A9A"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
